@@ -17,7 +17,7 @@ def main():
 	print()
 	# Get_address_point функция
 	print('*** Get_address_point ***')
-	print(api.get_address_point('Оренбург', 'Спартаковская', '61'))
+	print(api.get_address_point('г Оренбург', 'Спартаковская', '61'))
 	print(api.get_address_point('Оренбург', 'Спартаковская', '76'))
 	print(api.get_address_point('Москва', 'Малый Ивановский', '11/6с1'))
 	print(api.get_address_point('Москва', 'ул Большая Переяславская', '50'))
@@ -39,6 +39,17 @@ def main():
 	print(eval(api.get_correct_point('Москва', 'пер Малый Ивановский', '11/6с1', [55.754063, 37.640616])))
 	print(eval(api.get_correct_point('Оренбург', 'ул Спартаковская', '61', [51.773742, 55.125428])))
 	print()
+	# The new test
+	print('*** TEST ***')
+	print(eval(api.get_correct_point('Яранск', 'Карла Маркса', '181', [51.783742, 55.155428])))
+	print(eval(api.get_closest_point_on_road('Яранск', 'Карла Маркса', '33')))
+	print(eval(api.get_closest_point_on_road('Яранск', 'Карла Маркса', '29')))
+	# Query with problem
+	print('*** Query with problem ***')
+	print(api.get_address_point('Яранск', 'Карла Маркса', '44'))
+	print(eval(api.get_correct_point('Яранск', 'Карла Маркса', '26', [51.783742, 55.155428])))
+	print(eval(api.get_correct_point('Яранск', 'Карла Маркса', '181', [51.783742, 55.155428])))
+	print(eval(api.get_correct_point('Яранск', ' ул Карла Маркса', '44', [51.783742, 55.155428])))
 
 
 if __name__ == '__main__':

@@ -45,9 +45,10 @@ class Geocoder_51c:
 			return response.read()
 
 	def get_correct_point(self, n_p, street, house, dtp_point):
-		address = n_p + ' ' + street + ' ' + house
-		road = n_p + ' ' + street
+		# address = n_p + ' ' + street + ' ' + house
+		# road = n_p + ' ' + street
 		point = 'POINT({} {})'.format(dtp_point[1], dtp_point[0])
-		data = self.url + 'correct_point' + '?' + urlencode({'address': address, 'road': road, 'point': point})
+		# data = self.url + 'correct_point' + '?' + urlencode({'address': address, 'road': road, 'point': point})
+		data = self.url + 'correct_point' + '?' + urlencode({'n_p': n_p, 'street': street, 'house': house, 'point': point})
 		with urlopen(data) as response:
 			return response.read()
