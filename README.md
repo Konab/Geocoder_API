@@ -15,15 +15,15 @@ We import downloaded OSM dataset into PostgreSQL, write geocoding functions and 
 
 File geocoder_51c.py stores the class Geocoder_51c with methods for work with the API service. Below is a detailed description of each method:
 
-'''get_address_point
+    '''get_address_point
 
-Returns the geo-point of the address
+    Returns the geo-point of the address
 
-Arguments:
-  n_p {str} -- name of the settlement
-  street {str} -- name of the street
-  house {str} -- house number
+    Arguments:
+      n_p {str} -- name of the settlement
+      street {str} -- name of the street
+      house {str} -- house number
 
-Returns:
-  [json] -- Geo-data
-'''
+    Returns:
+      [json] -- Geo-data
+    '''
