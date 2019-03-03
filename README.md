@@ -13,16 +13,22 @@ On the hackathon PublicData implemented an algorithm for finding the correct geo
 ## Tech
 We import downloaded OSM dataset into PostgreSQL, write geocoding functions and the unique algorithm in PL/pgSQL. Implemented API to these functions by URL queues.
 
-File geocoder_51c.py stores the class Geocoder_51c with methods for work with the API service. Below is a detailed description of each method:
+File geocoder_51c.py stores the class Geocoder_51c with methods for work with the API service. Below is a detailed description of each **method**:
 
-### * get_address_point
+### get_address_point
 `
 Returns the geo-point of the address
+
 Arguments:
+
   n_p {str} -- name of the settlement
+  
   street {str} -- name of the street
+  
   house {str} -- house number
+
 Returns:
+
   [json] -- Geo-data
 `
 
