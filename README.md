@@ -25,3 +25,31 @@ Arguments:
 Returns:
   [json] -- Geo-data
 ```
+### get_diapason
+```
+Checks if point №2 is within the range of 300 meters from point №1
+Arguments:
+  point_1 {str} -- geo-data
+  point_2 {str} -- geo-data
+```
+### get_closest_point_on_road
+```
+Returns the projection of the building to the road
+Arguments:
+  n_p {str} -- name of the settlement
+  street {str} -- name of the street
+  house {str} -- house number
+Returns:
+  [json] -- Geo-data
+```
+### get_closest_point_on_road
+```
+Returns the calculated point
+Arguments:
+  n_p {str} -- name of the settlement
+  street {str} -- name of the street
+  house {str} -- house number
+  dtp_point {str} -- geo-point
+Returns:
+  [json] -- Geo-data
+```
