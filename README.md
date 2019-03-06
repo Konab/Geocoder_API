@@ -1,6 +1,6 @@
 # Geocoder_API
 
-Geocoder_API is simple python library that provides access to the geodata service with functionality:
+Geocoder_API is simple Python library that provides access to the geodata service with functionality:
 
 * Get address by geo-point
 * Get nearest geo-point to the road
